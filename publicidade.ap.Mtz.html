@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencial Plácido Ribeiro | Ap. em Mtz. - Matozinhos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        principal: '#0F4C5C',
+                        secundario: '#D4AF37',
+                        claro: '#F8FAFC',
+                        escuro: '#1E293B'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .texto-sombra {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+            }
+        }
+    </style>
+</head>
+<body class="bg-claro font-sans text-escuro">
+    <!-- Cabeçalho COM IMAGEM DO APARTAMENTO MAIOR -->
+    <header class="bg-principal text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <!-- 📸 IMAGEM DO APARTAMENTO - AUMENTADA E COM O MESMO TAMANHO DA IMAGEM DA CIDADE -->
+            <img 
+                src="https://i.postimg.cc/MGWS27sb/Ap-20260503-184753.webp" 
+                alt="Foto do Apartamento Residencial Plácido Ribeiro" 
+                class="mx-auto mb-8 w-full max-w-3xl h-auto rounded-xl shadow-xl border-4 border-secundario"
+            >
+
+            <h1 class="text-[clamp(1.8rem,5vw,3rem)] font-bold texto-sombra">Residencial Plácido Ribeiro</h1>
+            <p class="text-[clamp(1rem,2vw,1.3rem)] mt-3 text-secundario font-semibold">Bairro Cruzeiro • <strong>Mtz.</strong> - Matozinhos • MG</p>
+            <p class="mt-4 text-lg max-w-2xl mx-auto">Conforto, praticidade e localização privilegiada para você e sua família!</p>
+        </div>
+    </header>
+
+    <!-- Apresentação do Imóvel -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-principal mb-6">Um lugar perfeito para chamar de seu</h2>
+                <p class="text-lg leading-relaxed mb-6">
+                    Localizado a aproximadamente 45 km de Belo Horizonte, <strong>Mtz.</strong> - Matozinhos oferece tranquilidade no ambiente e fácil acesso à capital mineira. 
+                    O Residencial Plácido Ribeiro une qualidade de vida, segurança e comodidade em um só lugar, ideal para quem busca praticidade no dia a dia.
+                </p>
+                <p class="text-xl font-bold text-secundario">
+                    Valor total: R$ 100.000,00
+                </p>
+                <p class="mt-2">
+                    Forma de pagamento: Você pode assumir as prestações restantes, com condições facilitadas para conquistar o seu imóvel sem complicações.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE A CIDADE DE MTZ. - MATOZINHOS -->
+    <section class="py-12 bg-claro">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-center text-principal mb-10">Sobre <strong>Mtz.</strong> - Matozinhos</h2>
+            
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <!-- 📸 IMAGEM DA CIDADE - MANTIDA NO TAMANHO CERTO -->
+                <div class="md:w-1/2">
+                    <img 
+                        src="https://i.postimg.cc/qvG73MSj/Mtz-20260503-202625.webp" 
+                        alt="Imagem da cidade de Matozinhos - Mtz. MG" 
+                        class="w-full h-auto rounded-xl shadow-lg"
+                    >
+                </div>
+
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-4 text-principal">Uma cidade em constante desenvolvimento e qualidade de vida</h3>
+                    <p class="text-lg leading-relaxed mb-4">
+                        <strong>Mtz.</strong> - Matozinhos é um município estratégico na Região Metropolitana de Belo Horizonte, que combina o melhor do crescimento urbano com a tranquilidade do ambiente residencial. Reconhecida por sua infraestrutura organizada, serviços públicos de qualidade e localização privilegiada, a cidade oferece um equilíbrio perfeito entre a proximidade com a capital e o sossego de um ambiente mais reservado.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-4">
+                        É uma localidade que se destaca por seu desenvolvimento econômico, educacional e social, contando com reconhecimentos e investimentos que garantem alta qualidade de vida para seus moradores. Tudo o que você precisa para viver bem está aqui: comércio variado, serviços essenciais, espaços de lazer e fácil acesso a rotas de transporte, facilitando o dia a dia de famílias e profissionais.
+                    </p>
+                    <p class="text-lg font-semibold text-secundario">
+                        Venha viver em uma cidade que cresce pensando no seu futuro!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características do Condomínio e Imóvel -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-center text-principal mb-10">Características e Infraestrutura</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+                <div class="bg-claro p-6 rounded-xl shadow card-hover">
+                    <i class="fa fa-shield text-secundario text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Segurança e Acessibilidade</h3>
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Guarita com banheiro</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Sistema de câmeras instalado</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Portão eletrônico + interfone</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Elevador Atlas Schindler</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> AVCB do Corpo de Bombeiros</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Saídas de emergência sinalizadas</li>
+                    </ul>
+                </div>
+
+                <div class="bg-claro p-6 rounded-xl shadow card-hover">
+                    <i class="fa fa-home text-secundario text-3xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Conforto e Infraestrutura</h3>
+                    <ul class="space-y-2 text-left">
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Salão de festas com acesso PNE</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Gás canalizado</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Caixa d'água reserva</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Sistema de iluminação a sensor</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Depósito de lixo</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Salas livres para personalização</li>
+                        <li class="flex items-start"><i class="fa fa-check-circle text-principal mr-2 mt-1"></i> Vagas individualizadas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Localização e Pontos de Referência -->
+    <section class="py-12 bg-claro">
+        <div class="container mx-auto px-4">
+            <h2 class="text-[clamp(1.6rem,3vw,2.4rem)] font-bold text-center text-principal mb-10">Localização Estratégica</h2>
+            <p class="text-center text-lg mb-10 max-w-3xl mx-auto">
+                Tudo o que você precisa está perto! A região oferece fácil acesso a comércios, serviços essenciais e pontos de referência importantes:
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fa fa-map-marker text-secundario mr-2"></i>
+                        Serviços e Comércios
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between"><span>Escola infantil:</span> <span class="font-semibold">5 metros</span></li>
+                        <li class="flex justify-between"><span>Padaria:</span> <span class="font-semibold">200 metros</span></li>
+                        <li class="flex justify-between"><span>Restaurante:</span> <span class="font-semibold">250 metros</span></li>
+                        <li class="flex justify-between"><span>Supermercado:</span> <span class="font-semibold">400 metros</span></li>
+                        <li class="flex justify-between"><span>Hospital:</span> <span class="font-semibold">500 metros</span></li>
+                        <li class="flex justify-between"><span>Centro de <strong>Mtz.</strong>:</span> <span class="font-semibold">800 metros</span></li>
+                        <li class="flex justify-between"><span>Mercado Municipal:</span> <span class="font-semibold">900 metros</span></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow">
+                    <h3 class="text-xl font-semibold mb-4 flex items-center">
+                        <i class="fa fa-car text-secundario mr-2"></i>
+                        Pontos de Referência
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between"><span>Praça da Estação:</span> <span class="font-semibold">5 minutos</span></li>
+                        <li class="flex justify-between"><span>My Mall:</span> <span class="font-semibold">7 minutos</span></li>
+                        <li class="flex justify-between"><span>Pedro Leopoldo:</span> <span class="font-semibold">20 minutos</span></li>
+                        <li class="flex justify-between"><span>Shopping Estação BH:</span> <span class="font-semibold">39 minutos</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="py-12 bg-principal text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-[clamp(1.6rem,3vw,2.4rem)] font-bold mb-6">Não perca essa oportunidade!</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Realize o sonho de ter a casa dos seus sonhos no Residencial Plácido Ribeiro. Entre em contato para saber mais detalhes, agendar uma visita ou tirar suas dúvidas!
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="tel:+5531995260255" class="bg-secundario hover:bg-secundario/90 text-escuro font-semibold py-3 px-8 rounded-lg transition-all flex items-center gap-2">
+                    <i class="fa fa-phone"></i> (31) 99526-0255
+                </a>
+                <a href="https://wa.me/5531995260255" class="bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg transition-all flex items-center gap-2">
+                    <i class="fa fa-whatsapp"></i> Conversar pelo WhatsApp
+                </a>
+            </div>
+
+            <p class="mt-8 text-xl font-semibold">Residencial Plácido Ribeiro – O seu novo lar te espera!</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-escuro text-white py-4 text-center text-sm">
+        <p>© 2026 Residencial Plácido Ribeiro - <strong>Mtz.</strong> - Matozinhos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
